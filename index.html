@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Plotter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="plot_map.py" method="post" enctype="multipart/form-data">
+            <label for="shapefile">Upload Shapefile (.shp):</label>
+            <input type="file" id="shapefile" name="shapefile" accept=".shp" required>
+
+            <label for="airports">Upload Airport CSV File (.csv):</label>
+            <input type="file" id="airports" name="airports" accept=".csv" required>
+
+            <label for="title">Enter Block/Area Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="savingFileName">Enter Saving File Name:</label>
+            <input type="text" id="savingFileName" name="savingFileName" required>
+
+            <input type="submit" value="Plot Map">
+        </form>
+    </div>
+</body>
+</html>
